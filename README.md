@@ -3,7 +3,7 @@
 
 This repository contains a Django web application designed to integrate with a movie listing API, implement APIs for creating and managing movie collections, and include a scalable request counter middleware. 
 
-### Features:
+# Features:
 
 - **Integration with Flaky Third-Party Movie List API:**
   The application seamlessly integrates with a flaky third-party movie listing API. Despite potential failures and timeouts, the web application incorporates built-in retry mechanisms to ensure a robust and reliable user experience.
@@ -30,11 +30,13 @@ This repository contains a Django web application designed to integrate with a m
    Copy user name and password from environment file:
 
 5. **Run Migrations:**
-    ```bash python manage.py migrate
+    ```bash
+    python manage.py migrate
     
 6. **Run the Development Server:**
-    ```bash python manage.py runserver
-The server will be accessible at http://localhost:8000/.
+    ```bash
+    python manage.py runserver
+  The server will be accessible at [local host port no 8000](http://localhost:8000/)
 
 ## Movie Listing API Integration
 
