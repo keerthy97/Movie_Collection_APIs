@@ -36,7 +36,7 @@ This repository contains a Django web apis designed to integrate with a movie li
 6. **Run the Development Server:**
     ```bash
     python manage.py runserver
-  The server will be accessible at [local host port no 8000](http://localhost:8000/)
+  The server will be accessible at [http://localhost:8000/](http://localhost:8000/)
 
 ## Movie Listing API Integration
 
