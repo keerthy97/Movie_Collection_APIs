@@ -66,8 +66,6 @@ def paginated_movie_list(request):
 @permission_classes([IsAuthenticated])
 @authentication_classes([JWTAuthentication])
 class CollectionSummaryView(APIView):
-    permission_classes = [IsAuthenticated]
-    authentication_classes = [JWTAuthentication]
 
     def get(self, request):
         user = request.user
@@ -76,17 +74,24 @@ class CollectionSummaryView(APIView):
         # Get top 3 genres across all user collections
         all_genres = []
         for collection in collections:
-            all_genres.extend(collection.movies.values_list('genres', flat=True))
+            genre_list = list(collection.movies.values_list('genres', flat=True))
+            all_genres.append(genre_list)
 
-        genre_counts = Counter(all_genres)
-        top_genres = [genre for genre, _ in genre_counts.most_common(3)]
-        
+        # Flatten the nested list and split each element based on commas
+        split_genres = [genre.split(',') for genres in all_genres for genre in genres]
 
-        # Serialize collections without detailed movie information
+        # Flatten the list of lists
+        flat_genres = [item for sublist in split_genres for item in sublist]
+
+        # Find the top 3 frequent values
+        top_genres = Counter(flat_genres).most_common(3)
+
+        # Extract only the names of the top 3 genres
+        top_genre_names = [genre for genre, _ in top_genres]
         collection_serializer = CollectionSummarySerializer(collections, many=True)
         data = {
             'collections': collection_serializer.data,
-            'favourite_genres': ', '.join(top_genres)
+            'favourite_genres': ', '.join(top_genre_names)
         }
 
         # Serialize the response
