@@ -4,6 +4,20 @@
 
 This repository contains a Django web application that integrates with a movie listing API, implements APIs for managing movie collections, and includes a scalable request counter middleware. The goal is to assess your understanding of various concepts required for building a resilient Django project that handles concurrent requests.
 
+## Getting Started
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone link
+`[https://github.com/keerthy97/Movie_Collection_APIs]`
+
+1. **Set Up Environment:**
+```bash
+   python -m venv venv_name
+
+
+
 ## Movie Listing API Integration
 
 **Endpoint: GET /movies/**
@@ -49,15 +63,6 @@ Retrieve the number of requests served by the server.
 **Endpoint: POST /request-count/reset/**
 
 Reset the request count.
-
-## Getting Started
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone link
-`[https://github.com/keerthy97/Movie_Collection_APIs]`
-
 
 
 
