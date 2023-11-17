@@ -38,6 +38,9 @@ This repository contains a Django web apis designed to integrate with a movie li
     ```bash
     python manage.py runserver
   The server will be accessible at [http://localhost:8000/](http://localhost:8000/)
+7. **Run Tests**
+    ```bash
+    python manage.py test
 
 ## Movie Listing API Integration
 
