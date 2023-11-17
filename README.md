@@ -1,9 +1,9 @@
 ## Movie Collection APIs
-# Introduction
+## Introduction
 
 This repository contains a Django web apis designed to integrate with a movie listing API, implement APIs for creating and managing movie collections, and include a scalable request counter middleware. 
 
-# Features:
+## Features:
 
 - **Integration with Flaky Third-Party Movie List API:**
   It seamlessly integrates with a flaky third-party movie listing API, the web application incorporates built-in retry mechanisms to ensure a robust and reliable user experience.
