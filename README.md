@@ -6,13 +6,13 @@ This repository contains a Django web application designed to integrate with a m
 # Features:
 
 - **Integration with Flaky Third-Party Movie List API:**
-  The application seamlessly integrates with a flaky third-party movie listing API. Despite potential failures and timeouts, the web application incorporates built-in retry mechanisms to ensure a robust and reliable user experience.
+  The application seamlessly integrates with a flaky third-party movie listing API, the web application incorporates built-in retry mechanisms to ensure a robust and reliable user experience.
 
 - **Movie Collection Management:**
   The web application allows users to create, modify, and delete collections of movies. Users can add their favorite movies to multiple collections, providing a flexible and personalized movie management system.
 
 - **Scalable Request Counter Middleware:**
-  The implementation includes a request counter middleware that monitors and counts the number of requests served by the server. This middleware is designed to work efficiently in a concurrent environment and can be easily scaled as needed.
+  The implementation includes a request counter middleware that monitors and counts the number of requests served by the server. 
 
 
 ## Getting Started
