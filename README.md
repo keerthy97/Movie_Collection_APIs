@@ -10,7 +10,19 @@ This repository contains a Django web application that integrates with a movie l
 
    ```bash
    `[https://github.com/keerthy97/Movie_Collection_APIs]`
+2. **Set Up Virtual Environment:**
+   ```bash python -m venv venv
+3. **Install Dependencies:**
+    ```bash pip install -r requirements.txt
+4. **Set Environment Variables:**
+   Copy user name and password from environment file:
 
+5. **Run Migrations:**
+    ```bash python manage.py migrate
+    
+6. **Run the Development Server:**
+    ```bash python manage.py runserver
+The server will be accessible at http://localhost:8000/.
 
 ## Movie Listing API Integration
 
