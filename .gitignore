@@ -1,0 +1,40 @@
+# .gitignore for Django projects
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+
+# Environment variables
+.env
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# IDEs and editors
+.vscode/
+
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Django
+*.pyc
+*.pyo
+*.db.sqlite3
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+
+# Ignore database configuration
+db.sqlite3
+
+
