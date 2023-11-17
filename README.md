@@ -1,8 +1,19 @@
-# Backend Assignment
+## Django Movie Collection Web Application
+# Introduction
 
-## Introduction
+This repository contains a Django web application designed to integrate with a movie listing API, implement APIs for creating and managing movie collections, and include a scalable request counter middleware. 
 
-This repository contains a Django web application that integrates with a movie listing API, implements APIs for managing movie collections, and includes a scalable request counter middleware. The goal is to assess your understanding of various concepts required for building a resilient Django project that handles concurrent requests.
+### Features:
+
+- **Integration with Flaky Third-Party Movie List API:**
+  The application seamlessly integrates with a flaky third-party movie listing API. Despite potential failures and timeouts, the web application incorporates built-in retry mechanisms to ensure a robust and reliable user experience.
+
+- **Movie Collection Management:**
+  The web application allows users to create, modify, and delete collections of movies. Users can add their favorite movies to multiple collections, providing a flexible and personalized movie management system.
+
+- **Scalable Request Counter Middleware:**
+  The implementation includes a request counter middleware that monitors and counts the number of requests served by the server. This middleware is designed to work efficiently in a concurrent environment and can be easily scaled as needed.
+
 
 ## Getting Started
 
