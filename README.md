@@ -7,12 +7,14 @@ This repository contains a Django web application that integrates with a movie l
 ## Getting Started
 
 1. **Clone the Repository:**
-    [repo](https://github.com/keerthy97/Movie_Collection_APIs)
+    [Repository Link](https://github.com/keerthy97/Movie_Collection_APIs)
    
 2. **Set Up Virtual Environment:**
-   ```bash python -m venv venv
+   ```bash
+   python -m venv venv
 3. **Install Dependencies:**
-    ```bash pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
 4. **Set Environment Variables:**
    Copy user name and password from environment file:
 
