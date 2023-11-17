@@ -31,6 +31,7 @@ This repository contains a Django web apis designed to integrate with a movie li
 
 5. **Run Migrations:**
     ```bash
+    python manage.py makemigrations
     python manage.py migrate
     
 6. **Run the Development Server:**
