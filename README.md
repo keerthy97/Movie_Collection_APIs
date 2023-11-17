@@ -62,7 +62,7 @@ Retrieve user collections and top 3 favorite genres based on movies across all c
 
 Create a collection with a specified title, description, and list of movies.
 
-**Endpoint: PUT /collection/<collection_uuid>/**
+**Endpoint: PUT /collection/<collection_uuid>/** 
 
 Update the movie list in a collection.
 
