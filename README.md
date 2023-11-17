@@ -9,12 +9,13 @@ This repository contains a Django web application that integrates with a movie l
 1. **Clone the Repository:**
 
    ```bash
-   git clone link
-`[https://github.com/keerthy97/Movie_Collection_APIs]`
+   git clone link `[https://github.com/keerthy97/Movie_Collection_APIs]`
 
-1. **Set Up Environment:**
-```bash
-   python -m venv venv_name
+
+
+
+
+
 
 
 
