@@ -1,15 +1,15 @@
-## Django Movie Collection Web Application
+## Movie Collection APIs
 # Introduction
 
-This repository contains a Django web application designed to integrate with a movie listing API, implement APIs for creating and managing movie collections, and include a scalable request counter middleware. 
+This repository contains a Django web apis designed to integrate with a movie listing API, implement APIs for creating and managing movie collections, and include a scalable request counter middleware. 
 
 # Features:
 
 - **Integration with Flaky Third-Party Movie List API:**
-  The application seamlessly integrates with a flaky third-party movie listing API, the web application incorporates built-in retry mechanisms to ensure a robust and reliable user experience.
+  It seamlessly integrates with a flaky third-party movie listing API, the web application incorporates built-in retry mechanisms to ensure a robust and reliable user experience.
 
 - **Movie Collection Management:**
-  The web application allows users to create, modify, and delete collections of movies. Users can add their favorite movies to multiple collections, providing a flexible and personalized movie management system.
+  It allows users to create, modify, and delete collections of movies. Users can add their favorite movies to multiple collections, providing a flexible and personalized movie management system.
 
 - **Scalable Request Counter Middleware:**
   The implementation includes a request counter middleware that monitors and counts the number of requests served by the server. 
@@ -58,19 +58,19 @@ Register a user with a desired username and password. Response includes an acces
 
 Retrieve user collections and top 3 favorite genres based on movies across all collections.
 
-**Endpoint: POST /collections/**
+**Endpoint: POST /collection/**
 
 Create a collection with a specified title, description, and list of movies.
 
-**Endpoint: PUT /collections/<collection_uuid>/**
+**Endpoint: PUT /collection/<collection_uuid>/**
 
 Update the movie list in a collection.
 
-**Endpoint: GET /collections/<collection_uuid>/**
+**Endpoint: GET /collection/<collection_uuid>/**
 
 Retrieve details of a specific collection.
 
-**Endpoint: DELETE /collections/<collection_uuid>/**
+**Endpoint: DELETE /collection/<collection_uuid>/**
 
 Delete a collection.
 
