@@ -7,9 +7,8 @@ This repository contains a Django web application that integrates with a movie l
 ## Getting Started
 
 1. **Clone the Repository:**
-
-   ```bash
-   `[https://github.com/keerthy97/Movie_Collection_APIs]`
+    [repo](https://github.com/keerthy97/Movie_Collection_APIs)
+   
 2. **Set Up Virtual Environment:**
    ```bash python -m venv venv
 3. **Install Dependencies:**
